@@ -43,6 +43,7 @@ Make asynchronous request in PHP
 	}
 ```
 
+
 ```php
 	$asyncPHP = new AymericDev\AsyncPHP\AsyncPHP();
 	var_dump($asyncPHP->getUrl()); // current URL as default
