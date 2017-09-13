@@ -16,7 +16,7 @@
 
 	$asyncPHP = new AsyncPHP();
 	var_dump($asyncPHP->getUrl()); // current URL as default
-	$asyncPHP->addParam('time', 2);
+	$asyncPHP->addParam('time', 5);
 	// remove time2 get on exemple.com?time2=test
 	$asyncPHP->removeParam('time2');
 	$asyncPHP->setMethod("PUT"); // set GET POST PUT and what you want

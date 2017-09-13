@@ -21,7 +21,7 @@
 			$this->_method = "POST";
 			$this->_params = $_GET;
 			$this->_query = "";
-			$this->_headers = array("Content-Type", "application/x-www-form-urlencoded");
+			$this->_headers = array("Content-Type" => "application/x-www-form-urlencoded");
 			$this->_buildedHeaders = [];
 		}
 
