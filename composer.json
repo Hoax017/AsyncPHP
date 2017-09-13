@@ -1,0 +1,21 @@
+{
+    "name": "aymericdev/asyncphp",
+    "description": "make asynchronous request in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hoax017",
+            "email": "m.aymeric@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "AymericDev\\AsyncPHP\\": "src"
+        }
+    },
+    "require": {
+        "php": ">= 7.0"
+    }
+}
