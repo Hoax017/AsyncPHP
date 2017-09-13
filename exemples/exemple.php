@@ -1,5 +1,5 @@
 <?php
-	require 'AsyncPHP.php';
+	require '../src/AsyncPHP.php';
 
 	use AymericDev\AsyncPHP\AsyncPHP;
 
@@ -17,5 +17,7 @@
 	$asyncPHP = new AsyncPHP();
 	var_dump($asyncPHP->getUrl()); // current URL as default
 	$asyncPHP->addParam('time', 2);
+	// remove time2 get on exemple.com?time2=test
+	$asyncPHP->removeParam('time2');
 	$asyncPHP->setMethod("PUT"); // set GET POST PUT and what you want
 	$asyncPHP->run(); // send new request to URL

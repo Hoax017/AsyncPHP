@@ -54,9 +54,10 @@
 		{
 			$this->_headers = array_filter(
 				$this->_headers,
-				function ($v, $k) use ($key) {
+				function ($k) use ($key) {
 					return ($k != $key);
-				}
+				},
+				ARRAY_FILTER_USE_KEY
 			);
 		}
 
@@ -73,9 +74,10 @@
 		{
 			$this->_params = array_filter(
 				$this->_params,
-				function ($v, $k) use ($key) {
+				function ($k) use ($key) {
 					return ($k != $key);
-				}
+				},
+				ARRAY_FILTER_USE_KEY
 			);
 		}
 
