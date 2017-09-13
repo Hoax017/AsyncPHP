@@ -109,14 +109,14 @@
 			curl_close ($ch);
 		}
 
-		private function _buildQuery() {
-			$this->_query = http_build_query($this->_params);
-		}
-
 		private function _buildHeader() {
 			$this->_buildedHeaders = [];
 			foreach ($this->_headers as $key => $value) {
 				$this->_buildedHeaders[] = "$key: $value";
 			}
+		}
+
+		private function _buildQuery() {
+			$this->_query = http_build_query($this->_params);
 		}
 	}
