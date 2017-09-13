@@ -1,15 +1,15 @@
-#AsyncPHP
+# AsyncPHP
 
 Make asynchronous request in PHP
 
-##Install
+## Install
 
-###Composer
+### Composer
 ```bash
 composer require aymericdev/asyncphp
 ```
 
-###Manualy
+### Manualy
 ```php
 <?php
 	require ('AsyncPHP/src/AsyncPHP.php');
