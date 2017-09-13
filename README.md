@@ -19,10 +19,10 @@ Make asynchronous request in PHP
 	$asyncPHP->getUrl()             // get Url setted or current url if not set
 	$asyncPHP->setMethod(string)    // set HTTP method like GET POST PUT DELETE OPTION ...
 	$asyncPHP->getMethod()          // get method setted POST if not set
-	$asyncPHP->getHeaders()         // get headers[][]
+	$asyncPHP->getHeaders()         // get headers[]
 	$asyncPHP->addHeader(key, value)// add new header
 	$asyncPHP->removeHeader(key)    // remove header
-	$asyncPHP->getParams()          // get parameters[][]
+	$asyncPHP->getParams()          // get parameters[]
 	$asyncPHP->addParam(key, value) // add new parameter
 	$asyncPHP->removeParam(key)     // remove parameters
 	$asyncPHP->run                  // send request

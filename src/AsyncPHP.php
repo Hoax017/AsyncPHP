@@ -50,12 +50,12 @@
 			$this->_headers[$key] = $value;
 		}
 
-		public function removeHeader(string $value)
+		public function removeHeader(string $key)
 		{
 			$this->_headers = array_filter(
 				$this->_headers,
-				function ($v) use ($value) {
-					return ($v != $value);
+				function ($v, $k) use ($key) {
+					return ($k != $key);
 				}
 			);
 		}
@@ -69,12 +69,12 @@
 			$this->_params[$key] = $value;
 		}
 
-		public function removeParam(string $value)
+		public function removeParam(string $key)
 		{
 			$this->_params = array_filter(
 				$this->_params,
-				function ($v) use ($value) {
-					return ($v != $value);
+				function ($v, $k) use ($key) {
+					return ($k != $key);
 				}
 			);
 		}
